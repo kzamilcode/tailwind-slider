@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!--font-awasome-->
+  <script src="https://kit.fontawesome.com/afa777e6cd.js" crossorigin="anonymous"></script>
+<!--googlr-font-->
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Work+Sans:wght@700&display=swap" rel="stylesheet"> 
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-bodyColor dark:bg-white font-rubik font-medium">
+ 
+
+
+<!--home-section-->
+ 
+<div class="slider h-screen w-full relative">
+
+  <nav class="relative 2xl:px-44 md:px-28 mx-auto 2xl:p-28 md:p-16 z-50">
+    <!--flex container-->
+    <div class="flex items-center justify-between">
+      <!--logo-->
+      <div class="">
+        <img class="2xl:w-32 xl:w-20" src="../dist/img/homepagelogo.png" alt="">
+      </div>
+      <!--menu-itmes--->
+      <div class="">
+         <nav class="hidden xl:flex text-gray-300 font-medium md:text-base  2xl:text-2xl">
+           
+          <ul class="flex 2xl:space-x-16 md:space-x-8">
+
+            <li class="links"><a class="inline-block" href="index.html">HOME</a></li>
+
+            <li class="links"><a href="about.html" class=" inline-block">ABOUT</a></li>
+
+            <li class="links"><a href="#portfolio" class=" text-center  inline-block">PORTFOLIO</a></li>
+
+            <li class="links"><a href="#resume" class=" text-center   inline-block">RESUME</a></li>
+
+            <li class="links"><a href="#blog" class="text-center  inline-block">BLOG</a></li>
+
+            <li class="links"><a href="#content" class=" text-center   inline-block">CONTENT</a></li>
+          </ul>
+                
+         </nav>
+      </div>
+     
+       <!--bark-mode-button--->
+ 
+       <div class="hidden xl:block">
+        <div class="flex">
+               <!--message-icon-->
+      <div class="2xl:mr-14 md:mr-8 flex items-center">
+        <a href=""><img class="2xl:w-9 md:w-7" src="./img/messageicon.png" alt="message"></a>
+      </div>
+         <input type="checkbox" id ="toggle" class="hidden">
+         <label for="toggle" class="cursor-pointer">
+         <div class="2xl:w-16 2xl:h-8 md:w-14 md:h-6 flex items-center bg-gold rounded-full">
+           <div class="toggle-bot transform md:w-5 md:h-5 2xl:w-7 2xl:h-7 shadow-2xl bg-white rounded-full duration-300 ease-out"></div>
+         </div>
+       </label>
+        </div>
+    
+       </div>
+      
+       <!--humburger icon-->
+       <button id="menu-btn" class="transition-all duration-500 block humburger relative cursor-pointer w-6 h-6 xl:hidden focus:outline-none">
+         <span class="humburger-top bg-white absolute w-6 top-1 h-0.5 left-0 rotate-0 transition-all duration-500 "></span>
+         <span class="humburger-middle bg-white absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+         <span class="humburger-bottom bg-white absolute w-6 left-0 h-0.5 top-1 rotate-0 transition-all duration-500 "></span>
+       </button>
+    </div>
+    <!--mobile menu-->
+    <div class="xl:hidden">
+     <div id="menu" class="absolute z-50 hidden flex-col items-center self-end justify-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+       
+         <a href="">Home</a>
+           
+         <a href="">Pricing</a>
+         
+         <a href="">About</a>
+        
+         <a href="">Careers</a>
+    <!--last-itmes--->
+    <div class=" block xl:hidden">
+
+     <input type="checkbox" id ="toggleTwo" class="hidden">
+     <label for="toggleTwo" class="cursor-pointer">
+     <div class="w-14 h-6 flex items-center p-1 bg-gold rounded-full">
+       <div class="toggle-bot transform w-4 h-4 shadow-md bg-white rounded-full duration-300 ease-out"></div>
+     </div>
+   </label>
+   </div>
+     </div>
+     
+    </div>
+  </nav>
+  
+  <div class="slide top-0 active w-full h-screen bg-no-repeat bg-cover bg-center object-cover" style="background-image:url('./img/homepagebg.png')">
+    <!-- <img class="w-full" src="./img/image .png" alt=""> -->
+   
+  </div>
+  <div class="slide top-0 w-full h-screen bg-no-repeat bg-cover bg-center object-cover" style="background-image:url('./img/homepagebg.png')">
+   
+  </div>
+  <div class="slide w-full top-0 h-screen bg-no-repeat bg-cover bg-center object-cover" style="background-image:url('./img/homepagebg.png')">
+    <!-- <img class="w-full" src="./img/item-7.jpeg" alt=""> -->
+   
+  </div>
+  
+  <div class="navigation flex">
+    <i class="fas fa-chevron-left prev-btn"></i>
+    <i class="fas fa-chevron-right next-btn"></i>
+  </div>
+</div>
+
+<section id="home" class="h-screen w-full">
+  <h1 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, voluptate?</h1>
+</section>
+
+
+<!-------->
+
+<!-- <div class="btn absolute z-50 left-1/2 top-3/4 cursor-pointer -translate-x-1/2">
+  <div class="play relative w-20 h-20 rounded-full flex items-center justify-center before:absolute  bg-red-400 "></div>
+  
+  </div> -->
+   
+  <!-- <div class="clip absolute scale-0 top-1/3 flex items-center left-1/4 z-50"> 
+    <iframe width="860" height="515" src="https://www.youtube.com/embed/stVsp1r38cI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p class="text-white">Close</p>
+  </div> -->
+
+
+
+  <!-- let videoBtn = document.querySelector('.btn');
+let videoClip = document.querySelector('.clip');
+videoBtn.onclick = function(){
+  videoBtn.classList.add('active');
+  videoClip.classList.add('active');
+
+} -->
+
+
+<!-- .btn .play::before{
+  border: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 0 solid transparent;
+}
+
+.btn.active .play{
+  box-shadow: 0 0 0 120vh #222;
+  z-index: 9999;
+  position: relative;
+}
+.clip.active {
+
+  transform: scale(1);
+} -->
+<!-------->
+  
+
+   
+ <script src="../js/script.js"></script>
+</body>
+</html> 

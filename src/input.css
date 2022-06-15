@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/**dark-btn**/
+
+#toggle:checked ~ label div.toggle-bot,
+#toggleTwo:checked ~ label div.toggle-bot{
+ @apply translate-x-9
+}
+
+/*humburger menu*/
+
+.humburger-middle{
+  transform: translateY(7px);
+}
+.humburger-bottom{
+  transform: translateY(14px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  top:8px
+
+}
+.open .humburger-top{
+  transform: rotate(45deg);
+  translate: (6px);
+  transform: rotateY(6px);
+}
+.open .humburger-middle{
+  display: none;
+}
+.open .humburger-bottom{
+  transform: rotate(-45deg);
+  translate: (6px);
+  transform: rotateY(-6px);
+}
+
+/*humburger menu*/
+
+/**home page slider**/
+.slider .slide{
+  position: absolute;
+
+  clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active{
+  clip-path: circle(200% at 0 50%);
+  transition: 2s;
+}
+@media (max-width: 768px){
+  .slider .slide.active{
+    clip-path: circle(162vh at 0 50%);
+    transition: 2s;
+  }
+  }
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/*--home-section--*/
+
+/*underline hover*/
+
+
+ul li a.active{
+  border-bottom: 2px solid #ddd;
+  display: flex;
+}
+ul li a{
+  padding-bottom: 25px;
+  padding-top: 25px;
+
+}
+
+/***play button**/
+.btn .play::before{
+  border: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 0 solid transparent;
+}
+
+.btn.active .play{
+  box-shadow: 0 0 0 120vh #222;
+  z-index: 9999;
+  position: relative;
+}
+
+.clip.active {
+transition-delay: .2s;
+  transform: scale(1);
+}
